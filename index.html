@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <title>Psychic Game</title>
 </head>
+
 <body>
-    <h1>Guess what letter I'm thinking of...</h1>
-    <br>
-    <h3>Wins:</h3>
+    <span class="border border-success">
+        <h1>Guess what letter I'm thinking of...</h1>
+        <br>
+        <h3 class="text-success">Wins:</h3>
+        <h3>Losses:</h3>
+        <br>
+        <h3 class="text-danger">Guesses left:</h3>
+        <h3>Your guesses thus far:</h3>
+    </span>
+    <input type="text" id="bleh" />
+    <script>
+        $(document).ready(function () {
+            console.log("Yass");
+            $(document).on('keypress', function (e2) {
+        
+                var inputElement = e2.key;
+
+                console.log(inputElement);
+            });
+        });
+    </script>
+    <!-- <script src=".\assets\javascript\game.js"></script> -->
 </body>
+
 </html>
