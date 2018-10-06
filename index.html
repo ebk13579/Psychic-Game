@@ -26,11 +26,12 @@
     <script>
         $(document).ready(function () {
             console.log("Yass");
+            var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
             $(document).on('keypress', function (e2) {
         
                 var inputElement = e2.key;
 
-                console.log(inputElement);
+                console.log(inputElement.toUpperCase());
             });
         });
     </script>
